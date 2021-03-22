@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1">
+    <title>Bootstrap lecture 1</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            body
+            {
+                background-color: black;
+                color: gold;
+            }
+            .pagdiv
+            {
+                
+                float: left;
+                font-size: 30px;
+                margin: 10px;
+                
+            }
+            .recipes
+            {
+                float: left;
+                margin-bottom: 100px;
+            }
+            h3
+            {
+                margin-left: 70px;
+                margin-top: 10px;
+            }
+            p
+            {
+                margin-left: 30px;
+                margin-top: 10px;
+                color: white;
+                
+            }
+            .descfood
+            {
+                text-align: center;
+            }
+
+            button {
+                background-color: #555555;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    margin-left: 70px;
+                    }
+                    button:hover
+                    {
+                        background-color: gold;
+                        color: black;
+                        font-size: 20px;
+                    }
+                .pdesc
+                {
+                    font-size: 20px;
+                    color: white;
+                    width: 230px;
+                    
+                }
+                img:hover {
+        transform: scale(2);
+       
+        
+        }
+
+
+
+   /* Style the navigation bar links */
+    .navbar 
+            {
+                overflow: hidden;
+                background-color: #333;
+               
+            }
+            .navbar a 
+            {
+            float: left;
+            display: block;
+            color: gold;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 25px;
+            }
+
+            /* Right-aligned link */
+            .navbar a.right {
+            float: right;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            }        
+        </style>
+    </head>
+<body onload="onload()">
+
+    <div class="navbar">
+        <a href="project/project1.html">register</a>
+        <a href="contact-About/Contact Us/index.html">Contact </a>
+        <a href="contact-About/About/aboutUs2.html">About us </a>
+        
+        <a href="index.html" class="right">Home</a>
+      </div>
+
+
+
+    <h1 style="text-align: center; margin-top: 50px;">Our recipes</h1>
+    <div class="recipes">
+    
+        
+            <img src="images/rs1.png" alt="">
+            <h3>pizza</h3>
+            <p style="margin-left: 80px;">50$</p>
+    </div>
+    <div class="recipes">
+    
+        
+        <img src="images/rs2.png" alt="">
+        <h3>pizza</h3>
+        <p style="margin-left: 80px;">50$</p>
+        
+</div>
+<div class="recipes">
+    
+        
+    <img src="images/rs3.png" alt="">
+    <h3>pizza</h3>
+    <p style="margin-left: 80px;">50$</p>
+</div>
+<div class="recipes">
+    
+        
+    <img src="images/rs4.png" alt="">
+    <h3>pizza</h3>
+    <p style="margin-left: 80px;">50$</p>
+</div>
+<div class="recipes">
+    
+        
+    <img src="images/rs5.png" alt="">
+    <h3>pizza</h3>
+    <p style="margin-left: 80px;">50$</p>
+</div>
+<div class="recipes">
+    
+        
+    <img src="images/rs3.png" alt="">
+    <h3>pizza</h3>
+    <p style="margin-left: 80px;">50$</p>
+</div>
+
+<div class="clear" style="clear: left;"></div>
+
+<h1 class="descfood" style="margin: 10px;">About Our Food </h1>
+
+<div style="float: left; color: white; width: 50%; margin: 20px; margin-bottom: 100px;">
+    <h3 style="text-align: center; color: wheat;">best food</h3>
+    <p style="font-size: 20px; column-count: 2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard</p>
+</div>
+
+<div style="float: left; width:30%; margin-top: 10px;">
+    <img src="images/about-img.jpg" width="500px"  >
+</div>
+
+<div class="clear" style="clear: left;"></div>
+
+    <div id="pagdiv" style="margin-top: 100px;" >
+     
+
+    </div>
+    <!-- <div id="pagdiv">
+        <div>
+            <img src="images/about-img.jpg" width="300px" height="300px">
+        </div>
+        <p>pizza</p>
+        <button>order</button>
+
+    </div>
+    <div id="pagdiv">
+        <div>
+            <img src="images/about-img.jpg" width="300px" height="300px">
+        </div>
+        <p>pizza</p>
+        <button>order</button>
+
+    </div>
+    <div id="pagdiv">
+        <div>
+            <img src="images/about-img.jpg" width="300px" height="300px">
+        </div>
+        <p>pizza</p>
+        <button>order</button>
+
+    </div>
+    <div id="pagdiv">
+        <div id="imgdiv">
+            <img src="images/about-img.jpg" width="300px" height="300px">
+        </div>
+        <p id="pdiv">pizza</p>
+        <button id="btndiv">order</button>
+
+    </div> -->
+
+    <script>
+        var arrid=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+        var arrname=[ 'Spicy_Barger','Egg & Tosh','Pizza','Homemade','Noodles','Egg','Sushi Dizzy','Pizza','Pizza','Pizza','Pizza','Pizza','Pizza','Pizza','Pizza']
+        var arrsrc=[ 'images/burger_slide.png','images/burger_slide.png','images/burger_slide.png','images/burger_slide.png','images/burger_slide.png','images/burger_slide.png','images/burger_slide.png','images/burger_slide.png'
+    ,'images/burger_slide.png','images/burger_slide.png','images/burger_slide.png','images/burger_slide.png','images/burger_slide.png','images/burger_slide.png'
+,'images/burger_slide.png','images/burger_slide.png']
+        var arrdesc=[
+            
+        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+        ,'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorumby Cicero are'
+
+
+        ] 
+
+    
+
+         function onload()
+         {
+             var holdpagdiv=document.getElementById('pagdiv')
+            
+             for ( var i=0; i<arrid.length; i++)
+             {
+                        var d=document.createElement('DIV')
+                        d.classList.add("pagdiv");
+                    var x = document.createElement("IMG");
+                    x.setAttribute("src", arrsrc[i]);
+                    x.setAttribute("width", "200px");
+                    x.setAttribute("height", "200px")
+                    d.appendChild(x);
+                    
+                var para = document.createElement("p");
+                para.innerText  = arrname[i];
+                d.appendChild(para);
+
+                var desc = document.createElement("p");
+                desc.innerText  = arrdesc[i];
+                desc.classList.add("pdesc");
+                desc.setAttribute('width','100px')
+                d.appendChild(desc);
+
+
+                     newlink = document.createElement('a');
+                     newlink.setAttribute('href', 'order.html');
+                    var btn = document.createElement("BUTTON");
+                    btn.innerText = "Order";
+                    btn.addEventListener("click",function()
+                    {
+                        window.open(newlink); 
+                    })
+
+                    d.appendChild(btn);
+                    holdpagdiv.appendChild(d);
+               
+            
+
+
+         }
+            
+         }
+       
+        
+    </script>
+</body>
+</html>
